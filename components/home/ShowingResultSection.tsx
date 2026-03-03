@@ -37,111 +37,111 @@ export default ShowingResultSection;
 
 const dappResults: DappCardProps[] = [
   {
+    id: "dapp-001",
     name: "Uniswap",
     description:
       "The world's largest onchain marketplace, trusted by millions. Buy and sell crypto on Ethereum, Monad and 14+ other chains.",
     tags: ["TRADING", "NEW"],
-    href: "https://app.uniswap.org",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-01.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-01.png",
   },
   {
+    id: "dapp-002",
     name: "Bro.fun",
     description:
-      "Onchain arcade and social casino with skill‑based games and creator leagues powered by crypto.",
+      "Onchain arcade and social casino with skill-based games and creator leagues powered by crypto.",
     tags: ["GAMING", "HOT"],
-    href: "https://bro.fun",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-02.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-02.png",
   },
   {
+    id: "dapp-003",
     name: "Kuru",
     description:
-      "High‑frequency perp DEX bringing pro trading tools and deep liquidity to the Monad ecosystem.",
+      "High-frequency perp DEX bringing pro trading tools and deep liquidity to the Monad ecosystem.",
     tags: ["TRADING"],
-    href: "https://kuru.trade",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-03.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-03.png",
   },
   {
+    id: "dapp-004",
     name: "Neverland",
     description:
-      "Immersive onchain world with composable avatars, quests, and NFT‑gated experiences.",
+      "Immersive onchain world with composable avatars, quests, and NFT-gated experiences.",
     tags: ["GAMING", "NFT"],
-    href: "https://neverland.xyz",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-04.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-04.png",
   },
   {
+    id: "dapp-005",
     name: "Matcha",
     description:
-      "Best‑rate DEX aggregator that splits orders across multiple venues for optimal pricing.",
+      "Best-rate DEX aggregator that splits orders across multiple venues for optimal pricing.",
     tags: ["TRADING", "AGGREGATOR"],
-    href: "https://matcha.xyz",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-05.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-05.png",
   },
   {
+    id: "dapp-006",
     name: "SwapKit",
     description:
-      "Cross‑chain swap router to move liquidity between Ethereum, Monad, and 10+ other L2s in seconds.",
+      "Cross-chain swap router to move liquidity between Ethereum, Monad, and 10+ other L2s in seconds.",
     tags: ["BRIDGE", "CROSS-CHAIN"],
-    href: "https://swapkit.io",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-06.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-06.png",
   },
   {
+    id: "dapp-007",
     name: "Yield Harbor",
     description:
-      "Smart vaults that auto‑compound and rebalance yield strategies across leading Monad protocols.",
+      "Smart vaults that auto-compound and rebalance yield strategies across leading Monad protocols.",
     tags: ["YIELD"],
-    href: "https://yieldharbor.fi",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-01.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-07.png",
   },
   {
+    id: "dapp-008",
     name: "Questboard",
     description:
       "Onchain questing platform for discovering new dApps, completing tasks, and earning rewards.",
     tags: ["DISCOVERY", "REWARDS"],
-    href: "https://questboard.xyz",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-02.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-08.png",
   },
   {
+    id: "dapp-009",
     name: "Monad Name Service",
     description:
-      "Human‑readable names and identity layer for wallets, dApps, and communities on Monad.",
+      "Human-readable names and identity layer for wallets, dApps, and communities on Monad.",
     tags: ["IDENTITY"],
-    href: "https://mns.domains",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-03.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-09.png",
   },
   {
+    id: "dapp-010",
     name: "Yield Harbor",
     description:
-      "Smart vaults that auto‑compound and rebalance yield strategies across leading Monad protocols.",
+      "Smart vaults that auto-compound and rebalance yield strategies across leading Monad protocols.",
     tags: ["YIELD"],
-    href: "https://yieldharbor.fi",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-04.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-01.png",
   },
   {
+    id: "dapp-011",
     name: "Questboard",
     description:
       "Onchain questing platform for discovering new dApps, completing tasks, and earning rewards.",
     tags: ["DISCOVERY", "REWARDS"],
-    href: "https://questboard.xyz",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-05.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-02.png",
   },
   {
+    id: "dapp-012",
     name: "Monad Name Service",
     description:
-      "Human‑readable names and identity layer for wallets, dApps, and communities on Monad.",
+      "Human-readable names and identity layer for wallets, dApps, and communities on Monad.",
     tags: ["IDENTITY"],
-    href: "https://mns.domains",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-06.png",
     imageSrc: "/images/dapp-item-thumb/dapp-thumb-03.png",
   },
-]
+];

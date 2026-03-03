@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { fetchFooterConfig } from "@/lib/footer/fetchFooterConfig";
 import Footer from "@/components/footer/Footer";
+import { Toaster } from "sonner";
 
 const interFont = Inter({
   variable: "--font-inter",
@@ -34,6 +35,7 @@ export default async function RootLayout({
           <Header rawMenus={rawMenus} socials={socials} />
           {children}
           <Footer footerColumns={footerColumns} socials={socials} />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
