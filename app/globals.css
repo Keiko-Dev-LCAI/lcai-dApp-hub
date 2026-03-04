@@ -250,3 +250,30 @@ body {
 .lcai-transition {
   @apply transition-all duration-300 ease-in-out;
 }
+
+/* Dynamic Content Style */
+@layer components {
+  .lcai-content {
+    @apply text-content-ultra leading-relaxed;
+  }
+
+  .lcai-content p {
+    @apply mb-4 text-content-ultra text-lg font-normal leading-[1.7] tracking-[-0.18px];
+  }
+
+  .lcai-content ul {
+    @apply list-disc pl-6 mb-4;
+  }
+
+  .lcai-content ul li {
+    @apply text-lg font-normal leading-[1.7] tracking-[-0.18px] text-content-ultra;
+  }
+
+  .lcai-content a {
+    @apply text-content-primary border-b border-dashed border-border-primary hover:border-solid;
+  }
+
+  .lcai-content strong {
+    @apply font-semibold;
+  }
+}

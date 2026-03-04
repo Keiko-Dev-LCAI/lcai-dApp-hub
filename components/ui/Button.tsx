@@ -14,7 +14,7 @@ const buttonVariants = cva(
         gradient:
           "bg-linear-to-r from-surface-secondary to-surface-primary text-white hover:from-[#9333ea] hover:to-[#3b82f6]",
         secondary: "bg-surface-secondary text-white hover:opacity-90",
-        ghost: "bg-surface-base-light border-2 border-border-light text-content-soft hover:opacity-90 hover:text-content-bold active:text-white lcai-transition",
+        ghost: "bg-surface-base-light hover:bg-surface-base-soft border-2 border-border-light text-content-soft hover:opacity-90 hover:text-content-bold active:text-white lcai-transition",
       },
       size: {
         default: "type-body-m h-10 gap-2 px-4 font-medium",

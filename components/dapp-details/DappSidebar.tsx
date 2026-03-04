@@ -1,4 +1,4 @@
-import { ArrowLeft, CircleFadingPlus, ExternalLink, FileText, Flag, Globe, Hash, Link, RefreshCcw } from "lucide-react";
+import { ArrowLeft, CircleFadingPlus, ExternalLink, Flag, Globe, Hash, Link, RefreshCcw } from "lucide-react";
 import Image from "next/image";
 import CopyButton from "../CopyButton";
 import { Button } from "../ui/Button";
@@ -9,10 +9,12 @@ const DappSidebar = () => {
   return (
     <div className="max-w-102.5 w-full bg-surface-base-faint rounded-2xl">
       {/* Back Button */}
-      <button className="w-full p-4 flex gap-3 items-center text-base font-medium leading-none tracking-[-0.4px] text-content-strong border-b border-border-soft cursor-pointer hover:text-content-ultra lcai-transition">
-        <ArrowLeft className="size-5" />
-        BACK
-      </button>
+      <div className="border-b border-border-soft">
+        <button className="p-4 flex gap-3 items-center text-base font-medium leading-none tracking-[-0.4px] text-content-strong cursor-pointer hover:text-content-ultra lcai-transition">
+          <ArrowLeft className="size-5" />
+          BACK
+        </button>
+      </div>
 
 
       <div className="divide-y divide-border-soft">
@@ -92,7 +94,7 @@ const DappSidebar = () => {
 
           {/* <!-- Icon Buttons --> */}
           <div className="grid grid-cols-3 gap-4">
-            <button className="px-5 py-3 rounded-2xl bg-surface-base-extra-light border border-border-soft flex items-center justify-center text-content-brand-light">
+            <button className="px-5 py-3 rounded-2xl bg-surface-base-extra-light hover:bg-surface-base-soft lcai-transition border border-border-soft flex items-center justify-center text-content-brand-light cursor-pointer">
               <span className="flex items-center justify-center w-7 h-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +110,7 @@ const DappSidebar = () => {
                 </svg>
               </span>
             </button>
-            <button className="px-5 py-3 rounded-2xl bg-surface-base-extra-light border border-border-soft flex items-center justify-center text-content-brand-light">
+            <button className="px-5 py-3 rounded-2xl bg-surface-base-extra-light hover:bg-surface-base-soft lcai-transition border border-border-soft flex items-center justify-center text-content-brand-light cursor-pointer">
               <span className="flex items-center justify-center w-7 h-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +128,7 @@ const DappSidebar = () => {
                 </svg>
               </span>
             </button>
-            <button className="px-5 py-3 rounded-2xl bg-surface-base-extra-light border border-border-soft flex items-center justify-center text-content-brand-light">
+            <button className="px-5 py-3 rounded-2xl bg-surface-base-extra-light hover:bg-surface-base-soft lcai-transition border border-border-soft flex items-center justify-center text-content-brand-light cursor-pointer">
               <span className="flex items-center justify-center w-7 h-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
