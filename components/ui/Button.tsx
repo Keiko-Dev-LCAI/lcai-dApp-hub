@@ -14,12 +14,12 @@ const buttonVariants = cva(
         gradient:
           "bg-linear-to-r from-surface-secondary to-surface-primary text-white hover:from-[#9333ea] hover:to-[#3b82f6]",
         secondary: "bg-surface-secondary text-white hover:opacity-90",
-        ghost: "bg-surface-base-light border-2 border-border-light text-content-soft hover:opacity-90 hover:text-content-bold active:text-white lcai-transition",
+        ghost: "bg-surface-base-light hover:bg-surface-base-soft border-2 border-border-light text-content-soft hover:opacity-90 hover:text-content-bold active:text-white lcai-transition",
       },
       size: {
-        default: "type-body-m h-10 gap-2 px-4 font-medium",
+        default: "type-body-m h-9 md:h-10 gap-2 px-4 font-medium",
         sm: "type-body-s h-8 gap-1 px-3 font-medium",
-        md: "type-body-s h-11 gap-1.5 px-4 font-medium",
+        md: "type-body-s h-9 md:h-11 gap-1.5 px-4 md:font-medium",
       },
     },
     defaultVariants: {

@@ -1,25 +1,28 @@
+import { generateSlugWithId } from "@/lib/utils";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "../ui/Badge";
 
 export type DappCardProps = {
+  id: string | number;
   name: string;
   description: string;
   tags: string[];
-  href: string;
   iconSrc: string;
   imageSrc: string;
 };
 
 export function DappCard({
+  id,
   name,
   description,
   tags,
-  href,
   iconSrc,
   imageSrc,
 }: DappCardProps) {
+  const slug = generateSlugWithId(name, id);
+
   return (
     <article
       rel="noreferrer"
@@ -34,7 +37,7 @@ export function DappCard({
         {/* Top media section */}
         <div className="relative w-full">
           <Link
-            href={href}
+            href={`/${slug}`}
             target="_blank"
             className="block relative aspect-video bg-surface-light"
           >
@@ -50,7 +53,7 @@ export function DappCard({
 
           {/* Logo badge overlapping the image */}
           <Link
-            href={href}
+            href={`/${slug}`}
             target="_blank"
             className="absolute -bottom-7 left-4 h-14 md:h-20 w-14 md:w-20 inline-flex items-center justify-center rounded-full bg-surface-base-dark"
           >
@@ -68,7 +71,7 @@ export function DappCard({
         <div className="flex flex-1 flex-col gap-5 px-4 md:px-5 pb-4 md:pb-5 pt-12">
           <div className="space-y-3">
             <h3 className="text-2xl font-semibold leading-[1.2] tracking-[-0.24px] text-content-strong">
-              <Link href={href} target="_blank">{name}</Link>
+              <Link href={`/${slug}`} target="_blank">{name}</Link>
             </h3>
             <p className="text-base leading-normal tracking-[-0.16px] text-content-bold line-clamp-3">
               {description}

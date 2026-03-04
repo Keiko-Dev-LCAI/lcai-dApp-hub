@@ -5,13 +5,13 @@ import { cn } from "@/lib/utils";
 import type { AnchorHTMLAttributes, HTMLAttributes, ReactNode } from "react";
 
 const badgeVariants = cva(
-  "inline-flex items-center justify-center rounded-md border border-border-light bg-surface-light text-content-strong font-regular lcai-transition",
+  "inline-flex items-center justify-center rounded-md border border-border-light bg-surface-base-faint text-content-strong font-regular lcai-transition",
   {
     variants: {
       size: {
         sm: "px-2 py-1 text-xs leading-[1.2] tracking-[-0.12px]",
-        md: "px-3 py-1 text-xs tracking-[0.08em] uppercase", // initial
-        lg: "px-3.5 py-1.5 text-sm tracking-[0.12em] uppercase", // initial
+        md: "px-3 py-1 text-xs tracking-[0.08px] uppercase", // initial
+        lg: "px-3.5 py-1.5 text-sm tracking-[0.12px] uppercase", // initial
       },
     },
     defaultVariants: {
@@ -46,7 +46,7 @@ function Badge(props: BadgeProps) {
   if ("href" in props && props.href) {
     const { href, ...linkProps } = props as BadgeLinkProps;
     return (
-      <Link href={href} className={classes} {...linkProps}>
+      <Link href={href} className={cn('hover:text-content-ultra hover:bg-surface-light', classes)} {...linkProps}>
         {children}
       </Link>
     );

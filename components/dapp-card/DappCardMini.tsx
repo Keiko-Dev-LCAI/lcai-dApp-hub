@@ -1,38 +1,39 @@
 "use client";
 
 import clsx from "clsx";
-import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "../ui/Badge";
+import { generateSlugWithId } from "@/lib/utils";
 
 type DappCardMiniProps = {
+  id: string | number;
   name: string;
   description: string;
   tags: string[]; // e.g. ["TRADING"]
-  href: string;
   iconSrc: string; // path to logo
 };
 
 export function DappCardMini({
+  id,
   name,
   description,
   tags,
-  href,
   iconSrc,
 }: DappCardMiniProps) {
+  const slug = generateSlugWithId(name, id);
+
   return (
     <Link
-      href={href}
-      target="_blank"
+      href={`/${slug}`}
       rel="noreferrer"
       className="group block h-full"
     >
       <div
         className={clsx(
-          "relative flex h-full flex-col justify-between rounded-2xl border border-border-soft",
+          "flex h-full flex-col justify-between rounded-2xl border border-border-soft",
           "bg-surface-base-extra-light",
-          "px-4 md:px-6 py-4 md:py-6 lcai-transition hover:bg-surface-base-light"
+          "px-4 md:px-6 py-4 md:py-6 lcai-transition hover:bg-surface-base-soft"
         )}
       >
         {/* Top row: icon + title + external link */}
@@ -66,11 +67,6 @@ export function DappCardMini({
               </div>
             </div>
           </div>
-
-          {/* External link icon */}
-          <span className="absolute top-4 right-4 flex items-center justify-center h-6 w-6 text-content-medium lcai-transition group-hover:text-content-brand-strong">
-            <ExternalLink size={20} />
-          </span>
         </div>
       </div>
     </Link>

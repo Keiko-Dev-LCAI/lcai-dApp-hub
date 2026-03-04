@@ -69,11 +69,7 @@ const TrendingSection = () => {
             {trendingDapps.map((dapp) => (
               <DappCardMini
                 key={dapp.name}
-                name={dapp.name}
-                description={dapp.description}
-                tags={dapp.tags}
-                href={dapp.href}
-                iconSrc={dapp.iconSrc}
+                {...dapp}
               />
             ))}
           </div>
@@ -87,6 +83,7 @@ export default TrendingSection;
 
 const trendingDapps = [
   {
+    id: "dapp-001",
     name: "Uniswap",
     description:
       "The world's largest onchain marketplace, trusted by millions. Buy and sell crypto on Ethereum, Monad and 14+ other chains.",
@@ -95,6 +92,7 @@ const trendingDapps = [
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-01.png",
   },
   {
+    id: "dapp-002",
     name: "Magma",
     description:
       "A blazing-fast DEX built for high-throughput chains with deep onchain liquidity and advanced routing.",
@@ -103,6 +101,7 @@ const trendingDapps = [
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-02.png",
   },
   {
+    id: "dapp-003",
     name: "KyberSwap",
     description:
       "Multichain liquidity hub offering best-rate swaps, yield opportunities, and onchain limit orders.",
@@ -111,6 +110,7 @@ const trendingDapps = [
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-03.png",
   },
   {
+    id: "dapp-004",
     name: "Fomo",
     description:
       "Social trading and discovery platform to explore trending tokens and copy onchain strategies.",
@@ -119,6 +119,7 @@ const trendingDapps = [
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-04.png",
   },
   {
+    id: "dapp-005",
     name: "Monad Bridge",
     description:
       "Secure bridge for moving assets between Monad and major L1/L2 ecosystems with low fees.",
@@ -127,6 +128,7 @@ const trendingDapps = [
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-05.png",
   },
   {
+    id: "dapp-006",
     name: "LightLend",
     description:
       "Decentralized money market for supplying and borrowing assets with real-time risk controls.",
@@ -134,4 +136,4 @@ const trendingDapps = [
     href: "https://lightlend.xyz",
     iconSrc: "/images/dapp-item-logo/dapp-logo-icon-06.png",
   },
-]
+];
