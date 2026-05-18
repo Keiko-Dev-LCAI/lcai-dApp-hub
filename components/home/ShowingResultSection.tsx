@@ -16,14 +16,14 @@ const ShowingResultSection = ({
   const remainingCount = Math.max(totalCount - dapps.length, 0);
 
   return (
-    <section className="px-4">
+    <section>
       <div className="container mx-auto">
-        <h2 className="text-lg font-semibold leading-[1.2] tracking-[-0.18px] text-content-strong mb-3">
+        <h2 className="text-lg font-semibold leading-[1.2] tracking-[-0.18px] text-content-strong mb-3 2xl:mb-6">
           Showing {dapps.length} of {totalCount}
         </h2>
 
         {/* Grid Cards */}
-        <div className="grid gap-2.5 md:gap-4 grid-cols-[repeat(auto-fit,minmax(298px,1fr))] xl:grid-cols-[repeat(auto-fit,minmax(380px,1fr))] 2xl:grid-cols-[repeat(auto-fit,minmax(429px,1fr))]">
+        <div className="grid gap-2.5 md:gap-4 grid-cols-[repeat(auto-fit,minmax(298px,1fr))] xl:grid-cols-[repeat(auto-fit,minmax(380px,1fr))] 2xl:grid-cols-[repeat(auto-fit,minmax(420px,1fr))]">
           {dapps.map((dapp, i) => (
             <DappCard key={i} {...dapp} />
           ))}
