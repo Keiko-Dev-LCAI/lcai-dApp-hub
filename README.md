@@ -2,7 +2,7 @@
 
 ## Submit a dApp
 
-### How to contribute
+### How to submit your dApp
 
 1. Fork this repository.
 2. Create a new file in `constants/additionalDapps/` named `dapp-<unique-id>.json`.
