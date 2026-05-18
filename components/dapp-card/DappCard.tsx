@@ -18,7 +18,7 @@ export type DappCardProps = {
   tags: string[];
   iconSrc: string;
   imageSrc: string;
-  externalUrl?: string;
+  externalUrl: string;
   added_by_team?: boolean;
   addedByTeam?: boolean;
   powered_by_lightchain?: boolean;
