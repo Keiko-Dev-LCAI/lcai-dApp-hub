@@ -1,0 +1,9 @@
+{
+  "id": "dapp-myice",
+  "name": "MyICE — Personal Health Vault",
+  "description": "Your emergency medical ID and personal health vault. Store medications, conditions, allergies, and vitals. One-tap emergency access for first responders. AI-powered health assistant included.",
+  "tags": ["HEALTH", "MAINNET", "AI"],
+  "iconSrc": "/images/dapp-item-logo/myice.png",
+  "imageSrc": "/images/dapp-item-thumb/myice.png",
+  "externalUrl": "https://keiko-dev-lcai.github.io/myice/"
+}
