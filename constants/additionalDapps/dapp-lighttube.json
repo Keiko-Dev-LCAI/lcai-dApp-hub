@@ -1,0 +1,15 @@
+{
+  "id": "dapp-lighttube",
+  "name": "LightTube",
+  "description": "The first permanent video platform on Lightchain. Upload videos, audio, and media directly to the blockchain — no cloud, no servers, no censorship, no expiry. Anyone can watch without a wallet. Wallet required to upload (gas is the spam filter). No algorithm, no ads, no takedowns — ever.",
+  "tags": [
+    "VIDEO",
+    "MEDIA",
+    "STORAGE",
+    "PERMANENT",
+    "MAINNET"
+  ],
+  "iconSrc": "/images/dapp-item-logo/lighttube-logo.png",
+  "imageSrc": "/images/dapp-item-thumb/lighttube-thumb.png",
+  "externalUrl": "https://keiko-dev-lcai.github.io/lighttube/"
+}
