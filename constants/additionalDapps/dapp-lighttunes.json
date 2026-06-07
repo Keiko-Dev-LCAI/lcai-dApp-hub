@@ -1,0 +1,15 @@
+{
+  "id": "dapp-lighttunes",
+  "name": "LightTunes",
+  "description": "The first permanent music platform on Lightchain. Upload songs directly to the blockchain — no streaming service, no takedowns, no expiry. Listen free without a wallet. Wallet required to upload. 16 genres, album grouping, personal playlists, explicit content toggle. Your music lives on-chain forever.",
+  "tags": [
+    "MUSIC",
+    "MEDIA",
+    "STORAGE",
+    "PERMANENT",
+    "MAINNET"
+  ],
+  "iconSrc": "/images/dapp-item-logo/lighttunes-logo.png",
+  "imageSrc": "/images/dapp-item-thumb/lighttunes-thumb.png",
+  "externalUrl": "https://keiko-dev-lcai.github.io/lighttunes/"
+}
