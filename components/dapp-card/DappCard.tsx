@@ -211,7 +211,7 @@ export function DappCard({
         {/* Content section */}
         <div className="flex flex-1 flex-col gap-5 px-4 md:px-5 pb-4 md:pb-5 pt-12">
           <div className="space-y-3">
-            <h3 className="text-2xl font-semibold leading-[1.2] tracking-[-0.24px] text-content-strong">
+            <h3 className="text-3xl font-semibold leading-[1.2] tracking-[-0.3px] text-content-strong">
               <CardLink
                 internalHref={internalHref}
                 externalUrl={externalUrl}
@@ -241,7 +241,7 @@ export function DappCard({
                 </span>
               )}
             </h3>
-            <p className="text-base leading-normal tracking-[-0.16px] text-content-bold line-clamp-3">
+            <p className="text-lg leading-normal tracking-[-0.16px] text-content-bold line-clamp-3">
               {description}
             </p>
           </div>
