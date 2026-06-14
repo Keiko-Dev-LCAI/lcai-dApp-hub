@@ -1,7 +1,7 @@
 {
   "id": "dapp-lightchat",
   "name": "LightChat",
-  "description": "Decentralized messaging and video calling on Lightchain. Real-time encrypted chat, WebRTC peer-to-peer video calls, emoji/sticker/GIF sharing, on-chain LCAI gifts, and Memories photo feed \u2014 all wallet-to-wallet with no middleman. Free messaging for everyone. Premium video calls included (5 free lifetime, then $3/month in LCAI).",
+  "description": "Decentralized messaging and video calling on Lightchain. Real-time encrypted chat, WebRTC peer-to-peer video calls, emoji/sticker/GIF sharing, on-chain LCAI gifts, and Memories photo feed — all wallet-to-wallet with no middleman. Free messaging for everyone. Premium video calls included (5 free lifetime, then $3/month in LCAI).",
   "tags": [
     "SOCIAL",
     "COMMUNICATION",
@@ -10,5 +10,6 @@
   ],
   "iconSrc": "/images/dapp-item-logo/lightchat-logo.png",
   "imageSrc": "/images/dapp-item-thumb/lightchat-thumb.png",
-  "externalUrl": "https://keiko-dev-lcai.github.io/lightchat-app/"
+  "externalUrl": "https://keiko-dev-lcai.github.io/lightchat-app/",
+  "x": "x.com/KeikoDevLCAI"
 }
