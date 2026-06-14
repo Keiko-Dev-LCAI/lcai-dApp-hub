@@ -1,7 +1,7 @@
 {
   "id": "dapp-audiovisualarchives",
   "name": "Audio & Visual Archives",
-  "description": "The Lightchain Internet Archive. Store photos, videos, audio, and documents permanently on the Lightchain blockchain \u2014 no IPFS, no cloud, no servers. Create family albums, school yearbooks, baby journals, or any personal archive. Your memories are stored as on-chain calldata forever. No monthly fees. Powered by Lightchain AI.",
+  "description": "The Lightchain Internet Archive. Store photos, videos, audio, and documents permanently on the Lightchain blockchain — no IPFS, no cloud, no servers. Create family albums, school yearbooks, baby journals, or any personal archive. Your memories are stored as on-chain calldata forever. No monthly fees. Powered by Lightchain AI.",
   "tags": [
     "STORAGE",
     "NFT",
@@ -9,5 +9,6 @@
   ],
   "iconSrc": "/images/dapp-item-logo/audiovisualarchives-logo.png",
   "imageSrc": "/images/dapp-item-thumb/audiovisualarchives-thumb.png",
-  "externalUrl": "https://orcavault.win"
+  "externalUrl": "https://orcavault.win",
+  "x": "x.com/KeikoDevLCAI"
 }
