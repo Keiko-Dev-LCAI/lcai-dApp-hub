@@ -1,7 +1,7 @@
 {
   "id": "dapp-lightweather",
   "name": "LightWeather",
-  "description": "FREE — AI-powered weather app on Lightchain. 7-day forecasts, severe weather alerts, pollen index, UV index, and AI chat powered by Lightchain AIVM. Supports 6 languages. Premium upgrade available in LCAI.",
+  "description": "FREE — AI-powered weather on Lightchain. 7-day forecasts, severe alerts, UV index, and AI chat powered by decentralized Lightchain AIVM nodes. 6 languages. Premium upgrade in LCAI.",
   "tags": [
     "AI",
     "TOOLS"
@@ -9,5 +9,5 @@
   "iconSrc": "/images/dapp-item-logo/lightweather-logo.png",
   "imageSrc": "/images/dapp-item-thumb/lightweather-thumb.png",
   "externalUrl": "https://lightweather.win",
-  "x": "x.com/KeikoDevLCAI"
+  "x": "x.com/LightWeather"
 }
