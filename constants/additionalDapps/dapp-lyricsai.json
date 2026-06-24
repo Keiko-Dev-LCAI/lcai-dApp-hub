@@ -1,0 +1,9 @@
+{
+  "id": "dapp-lyricsai",
+  "name": "LyricsAI",
+  "description": "AI-powered lyrics and music generator on LightChain. Generate lyrics free, pay 5 LCAI to get a full song with download.",
+  "tags": ["AI", "MAINNET"],
+  "iconSrc": "/images/dapp-item-logo/lyricsai.png",
+  "imageSrc": "/images/dapp-item-thumb/lyricsai.png",
+  "externalUrl": "https://music-dapp-jet.vercel.app"
+}
