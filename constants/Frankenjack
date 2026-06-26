@@ -1,1 +1,11 @@
-
+{
+  "id": "frankenjack",
+  "name": "FrankenJack",
+  "description": "Free-to-play cyberpunk blackjack game built on LightChain AI. Play with chips, no real money required. Hit, stand, double down and split your way to victory.",
+  "url": "https://frankenjack.org",
+  "category": "Gaming",
+  "tags": ["blackjack", "casino", "free-to-play", "gaming", "cyberpunk"],
+  "developer": "FrankenApps",
+  "chain": "LCAI",
+  "logo": "https://frankenjack.org/logo192.png"
+}
