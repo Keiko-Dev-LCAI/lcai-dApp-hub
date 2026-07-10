@@ -1,0 +1,9 @@
+{
+  "id": "dapp-filament",
+  "name": "Filament",
+  "description": "Non-custodial DEX and memecoin launchpad on LightChain AI. Swap tokens, provide liquidity, and fair-launch memecoins that auto-list on-chain when they sell out — LP burned forever, no rug possible.",
+  "tags": ["DEFI", "TOOLS"],
+  "iconSrc": "/images/dapp-item-logo/filament.png",
+  "imageSrc": "/images/dapp-item-thumb/filament.png",
+  "externalUrl": "https://filament.exchange"
+}
