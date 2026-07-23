@@ -1,7 +1,7 @@
 {
   "id": "dapp-orcafiles",
   "name": "OrcaFiles",
-  "description": "Encrypted local file organizer on Lightchain. Free, Home, and Pro tiers. Organize files in your own browser with local folder backup — no cloud, no OAuth, no data on anyone's server. AI-powered file analysis via AIVM.",
+  "description": "Encrypted file organizer on Lightchain. Browse and organize files in your browser \u2014 encryption stays on your device. Powered by Lightchain AIVM.",
   "tags": [
     "TOOLS",
     "AI",

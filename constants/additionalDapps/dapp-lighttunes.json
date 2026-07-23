@@ -1,7 +1,7 @@
 {
   "id": "dapp-lighttunes",
   "name": "LightTunes",
-  "description": "The first permanent music platform on Lightchain. Upload songs directly to the blockchain — no streaming service, no takedowns, no expiry. Listen free without a wallet. Wallet required to upload. 16 genres, album grouping, personal playlists, explicit content toggle. Your music lives on-chain forever.",
+  "description": "The first permanent music platform on Lightchain. Upload songs directly to the blockchain \u2014 no streaming service, no takedowns, no expiry. Listen free without a wallet. Wallet required to upload. 16 genres, album grouping, personal playlists, explicit content toggle. Your music lives on-chain forever.",
   "tags": [
     "MUSIC",
     "MEDIA",
