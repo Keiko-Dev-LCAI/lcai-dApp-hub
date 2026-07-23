@@ -1,0 +1,9 @@
+{
+  "id": "dapp-filament",
+  "name": "Filament",
+  "description": "Non-custodial DEX and memecoin launchpad on LightChain AI. Fair-launch coins on a bonding curve that auto-list on Filament with burned liquidity.",
+  "tags": ["DEX", "DEFI", "SWAP", "MAINNET"],
+  "iconSrc": "/images/dapp-item-logo/filament.png",
+  "imageSrc": "/images/dapp-item-thumb/filament.png",
+  "externalUrl": "https://filament.exchange"
+}
