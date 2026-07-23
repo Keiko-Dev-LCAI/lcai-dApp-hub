@@ -1,7 +1,7 @@
 {
   "id": "dapp-audiovisualarchives",
   "name": "Lightchain Archives",
-  "description": "The Lightchain Internet Archive. Store photos, videos, audio, and documents permanently on the Lightchain blockchain \u2014 no IPFS, no cloud, no servers. Create family albums, school yearbooks, baby journals, or any personal archive. Your memories are stored as on-chain calldata forever. No monthly fees. Powered by Lightchain AI.",
+  "description": "Lightchain Archives \u2014 store photos, videos, audio, and documents on Lightchain with encrypted uploads and on-chain references.",
   "tags": [
     "STORAGE",
     "NFT",
