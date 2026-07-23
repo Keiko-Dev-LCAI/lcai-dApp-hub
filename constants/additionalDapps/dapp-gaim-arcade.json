@@ -1,0 +1,9 @@
+{
+  "id": "dapp-gaim-arcade",
+  "name": "GAIM Arcade",
+  "description": "AI-powered game creation platform where users create, remix and share games with Lightchain AI integration.",
+  "tags": ["GAMING", "AI"],
+  "iconSrc": "/images/dapp-item-logo/gaim-arcade.png",
+  "imageSrc": "/images/dapp-item-thumb/gaim-arcade-thumb.png",
+  "externalUrl": "https://www.gaimarcade.com/lcai"
+}
