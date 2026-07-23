@@ -1,12 +1,11 @@
 import type { DappCardProps } from "@/components/dapp-card/DappCard";
-import { isKnownDappTag } from "@/lib/dappTags";
-import { readdir, readFile } from "node:fs/promises";
+import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
 
 const ADDITIONAL_DAPPS_DIR = path.join(
   process.cwd(),
   "constants",
-  "additionalDapps"
+  "additionalDapps",
 );
 
 const ALLOWED_ICON_PREFIX = "/images/dapp-item-logo/";
@@ -49,35 +48,52 @@ function isValidTagList(value: unknown): value is string[] {
 
 function hasRequiredDappFields(
   dappResultItem: unknown,
-  fileName: string
+  fileName: string,
 ): dappResultItem is DappCardProps {
   if (!dappResultItem || typeof dappResultItem !== "object") return false;
   const dapp = dappResultItem as Record<string, unknown>;
 
   if (!(typeof dapp.id === "string" || typeof dapp.id === "number")) {
-    console.warn(`[additionalDapps] Skipping ${fileName}: id is not a string or number`)
+    console.warn(
+      `[additionalDapps] Skipping ${fileName}: id is not a string or number`,
+    );
     return false;
   } else if (typeof dapp.name !== "string" || dapp.name.trim().length === 0) {
-    console.warn(`[additionalDapps] Skipping ${fileName}: name is not a string or is empty`)
+    console.warn(
+      `[additionalDapps] Skipping ${fileName}: name is not a string or is empty`,
+    );
     return false;
-  } else if (typeof dapp.description !== "string" || dapp.description.trim().length === 0) {
-    console.warn(`[additionalDapps] Skipping ${fileName}: description is not a string or is empty`)
+  } else if (
+    typeof dapp.description !== "string" ||
+    dapp.description.trim().length === 0
+  ) {
+    console.warn(
+      `[additionalDapps] Skipping ${fileName}: description is not a string or is empty`,
+    );
     return false;
   } else if (!isValidTagList(dapp.tags)) {
-    console.warn(`[additionalDapps] Skipping ${fileName}: tags are not a valid tag list`)
+    console.warn(
+      `[additionalDapps] Skipping ${fileName}: tags are not a valid tag list`,
+    );
     return false;
   } else if (!isAllowedAssetPath(dapp.iconSrc, ALLOWED_ICON_PREFIX)) {
-    console.warn(`[additionalDapps] Skipping ${fileName}: iconSrc is not a valid asset path`)
+    console.warn(
+      `[additionalDapps] Skipping ${fileName}: iconSrc is not a valid asset path`,
+    );
     return false;
   } else if (!isAllowedAssetPath(dapp.imageSrc, ALLOWED_IMAGE_PREFIX)) {
-    console.warn(`[additionalDapps] Skipping ${fileName}: imageSrc is not a valid asset path`)
+    console.warn(
+      `[additionalDapps] Skipping ${fileName}: imageSrc is not a valid asset path`,
+    );
     return false;
   } else if (!isHttpUrl(dapp.externalUrl)) {
-    console.warn(`[additionalDapps] Skipping ${fileName}: externalUrl is not a valid http url`)
+    console.warn(
+      `[additionalDapps] Skipping ${fileName}: externalUrl is not a valid http url`,
+    );
     return false;
   }
 
-  return true
+  return true;
 
   // return Boolean(
   //   (typeof dapp.id === "string" || typeof dapp.id === "number") &&
@@ -126,8 +142,9 @@ async function loadOne(fileName: string): Promise<DappCardProps | null> {
   } catch (error) {
     // One bad file should not blank the entire catalogue.
     console.warn(
-      `[additionalDapps] Failed to load ${fileName}: ${error instanceof Error ? error.message : String(error)
-      }`
+      `[additionalDapps] Failed to load ${fileName}: ${
+        error instanceof Error ? error.message : String(error)
+      }`,
     );
     return null;
   }
@@ -141,8 +158,9 @@ export async function loadAdditionalDapps(): Promise<DappCardProps[]> {
     // Directory missing is fine - just means no community submissions yet.
     if ((error as NodeJS.ErrnoException)?.code !== "ENOENT") {
       console.warn(
-        `[additionalDapps] Failed to read ${ADDITIONAL_DAPPS_DIR}: ${error instanceof Error ? error.message : String(error)
-        }`
+        `[additionalDapps] Failed to read ${ADDITIONAL_DAPPS_DIR}: ${
+          error instanceof Error ? error.message : String(error)
+        }`,
       );
     }
     return [];
@@ -150,16 +168,22 @@ export async function loadAdditionalDapps(): Promise<DappCardProps[]> {
 
   const jsonFiles = files.filter((fileName) => fileName.endsWith(".json"));
 
-  const loaded = await Promise.all(jsonFiles.map(loadOne));
+  const filesWithBirthtime = await Promise.all(
+    jsonFiles.map(async (fileName) => {
+      const filePath = path.join(ADDITIONAL_DAPPS_DIR, fileName);
+      const { birthtimeMs } = await stat(filePath);
+      return { fileName, birthtimeMs };
+    }),
+  );
+
+  filesWithBirthtime.sort(
+    (a, b) =>
+      a.birthtimeMs - b.birthtimeMs || a.fileName.localeCompare(b.fileName),
+  );
+  const loaded = await Promise.all(
+    filesWithBirthtime.map(({ fileName }) => loadOne(fileName)),
+  );
   const valid = loaded.filter((item): item is DappCardProps => item !== null);
 
-  // Deterministic sort: by `id` descending, with `name` as a stable
-  // tiebreaker. `fs.stat().birthtimeMs` was unreliable on Linux/CI
-  // (often returned 0) - see BUGS.md #B5.
-  return valid.sort((a, b) => {
-    const idA = String(a.id);
-    const idB = String(b.id);
-    if (idA !== idB) return idB.localeCompare(idA);
-    return a.name.localeCompare(b.name);
-  });
+  return valid;
 }
