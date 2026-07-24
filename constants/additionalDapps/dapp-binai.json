@@ -1,0 +1,9 @@
+{
+  "id": "dapp-binai",
+  "name": "Binai",
+  "description": "Personal AI on Lightchain AIVM. Calendar, contacts & notes free forever. 20 free AI chats; full AI $3/mo LCAI. Remembers you.",
+  "tags": ["AI", "TOOLS", "MAINNET"],
+  "iconSrc": "/images/dapp-item-logo/binai-logo.png",
+  "imageSrc": "/images/dapp-item-thumb/binai-thumb.png",
+  "externalUrl": "https://binai.win"
+}
