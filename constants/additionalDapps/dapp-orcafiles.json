@@ -1,0 +1,14 @@
+{
+  "id": "dapp-orcafiles",
+  "name": "OrcaFiles",
+  "description": "Encrypted file organizer on Lightchain. Browse and organize files in your browser \u2014 encryption stays on your device. Powered by Lightchain AIVM.",
+  "tags": [
+    "TOOLS",
+    "AI",
+    "STORAGE"
+  ],
+  "iconSrc": "/images/dapp-item-logo/orcafiles.png",
+  "imageSrc": "/images/dapp-item-thumb/orcafiles-thumb.png",
+  "externalUrl": "https://orcafiles.ai",
+  "x": "x.com/KeikoDevLCAI"
+}
