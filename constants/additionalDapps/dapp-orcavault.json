@@ -1,0 +1,14 @@
+{
+  "id": "dapp-orcavault",
+  "name": "OrcaVault",
+  "description": "OrcaVault — store photos, videos, audio, and documents permanently on Lightchain with encrypted uploads and on-chain references. Personal on-chain media vault (not affiliated with Lightchain AI).",
+  "tags": [
+    "STORAGE",
+    "NFT",
+    "MAINNET"
+  ],
+  "iconSrc": "/images/dapp-item-logo/orcavault-logo.png",
+  "imageSrc": "/images/dapp-item-thumb/orcavault-thumb.png",
+  "externalUrl": "https://orcavault.win",
+  "x": "x.com/KeikoDevLCAI"
+}
