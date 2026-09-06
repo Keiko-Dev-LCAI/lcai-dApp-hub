@@ -1,0 +1,9 @@
+{
+  "id": "dapp-lightapps",
+  "name": "LightApps",
+  "description": "Independent discovery hub for apps, tools, infrastructure, and community projects across the Lightchain ecosystem.",
+  "tags": ["TOOLS", "BUILDER"],
+  "iconSrc": "/images/dapp-item-logo/lightapps-icon-hub-256.png",
+  "imageSrc": "/images/dapp-item-thumb/lightapps-preview-hub-800x450.jpg",
+  "externalUrl": "https://www.lightapps.ai/"
+}
